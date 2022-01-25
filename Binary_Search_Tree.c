@@ -25,12 +25,12 @@ void create_tree(struct node*);
 
 struct node* insertElement(struct node*, int);
 
-//Function for Pre/In/Post -oreder traversal...
+//Function for Pre/In/Post -oreder traversal without any return type...
 void preorderTraversal(struct node*);
 void inorderTraversal(struct node*);
 void postorderTraversal(struct node*);
 
-//Operation on the element...
+//Operation on the elements present in the tree...
 struct node* findSmallestElement(struct node*);
 struct node* findLargestElement(struct node*);
 struct node* deleteElement(struct node*, int);
@@ -134,7 +134,9 @@ int main()
     } while (option != 14);
     return 0;
 }
+
 //Code is edited by @KaustaKumarKhanikar..Please remove the line before compilation for your use...
+
 void create_tree(struct node* tree)
 {
     tree = NULL;
@@ -278,7 +280,6 @@ struct node* deleteElement(struct node* tree, int val)
         parent->right = ptr;
     free(cur);
     return tree;
-
 }
 
 int totalNodes(struct node* tree)
