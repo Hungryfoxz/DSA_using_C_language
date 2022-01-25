@@ -1,4 +1,4 @@
-/*[+]C program of Graph..
+/*[+]C program of Queue using array structure..
   [+]Edited in Sublime Text..
   [+]Compiled in VisualStudioCode..
   [+]Created by @KaustavKumarKhanikar..
