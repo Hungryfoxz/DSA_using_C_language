@@ -29,11 +29,11 @@ void main()
         printf("\n****** MENU ******\n");
         printf("1. Insert\n2. Delete\n3. Display\n4. Exit\n");
         printf("Enter your choice: ");
-        scanf_s("%d", &choice);
+        scanf("%d", &choice);
         switch (choice)
         {
         case 1: printf("Enter the value to be insert: ");
-            scanf_s("%d", &value);
+            scanf("%d", &value);
             insert(value);
             break;
         case 2: delete(); break;
