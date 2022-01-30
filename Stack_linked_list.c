@@ -25,7 +25,7 @@ void main()
 		printf("2..Pop operation ..\n");
 		printf("3..Display the data's ..\n");
 		printf("4..Exit ..\n");
-		scanf_s(" %d", &choice);
+		scanf(" %d", &choice);
 		switch (choice)
 		{
 		case 1:push();
@@ -46,7 +46,7 @@ void push()
 	int item;
 	ptr = (struct node*)malloc(sizeof(struct node));
 	printf("\nEnter the value to enter into stack ... : ");
-	scanf_s(" %d", &item );
+	scanf(" %d", &item );
 	ptr ->data = item;
 	ptr ->next = top;
 	top = ptr;
