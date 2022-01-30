@@ -341,7 +341,6 @@ struct node* mirrorImage(struct node* tree)
         ptr->left = ptr->right;
         tree->right = ptr;
     }
-    return tree;
 }
 
 struct node* deleteTree(struct node* tree)
@@ -352,5 +351,4 @@ struct node* deleteTree(struct node* tree)
         deleteTree(tree->right);
         free(tree);
     }
-    return 0;
 }
