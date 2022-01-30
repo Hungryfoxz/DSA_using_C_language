@@ -102,6 +102,7 @@ int main()
         case 6:
             ptr = findLargestElement(tree);
             printf("\n Largest element is : %d", ptr->data);
+            break();
 
         case 7:
             printf("\n Enter the element to be deleted : ");
