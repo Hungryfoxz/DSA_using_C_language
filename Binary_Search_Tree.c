@@ -230,7 +230,7 @@ struct node* findLargestElement(struct node* tree)
 
 struct node* deleteElement(struct node* tree, int val)
 {
-    struct node* cur, * parent, *psuc, * ptr;
+    struct node* cur, * parent, *psuc, * ptr, * suc;
     //struct node* suc = (struct node*)malloc(sizeof(struct node)); {};sometimes the code work without this line.Use as per convenience..
     if (tree->left == NULL)
     {
