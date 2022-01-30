@@ -25,7 +25,7 @@ void main()
 		printf("\n2..DeQueue Operation ..");
 		printf("\n3..Display Data ..");
 		printf("\n4..Exit ..\n");
-		scanf_s("                  %d", &data);
+		scanf("                  %d", &data);
 		switch (data)
 		{
 		case 1:enter();
@@ -49,7 +49,7 @@ void enter()
 		printf("\nQueue Overflow ..");
 	}
 	printf("\nEnter the value to be inserted in the Queue: ");
-	scanf_s("%d", &val);
+	scanf("%d", &val);
 	q_array[rear] = val;
 	rear++;
 }
