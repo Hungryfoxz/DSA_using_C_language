@@ -20,7 +20,7 @@ int main()
 	struct node* Adj[10];
 	int i, no_of_nodes;
 	printf("\nEnter the number of nodes in Graph : ");
-	scanf_s("%d", &no_of_nodes);
+	scanf("%d", &no_of_nodes);
 	for (i = 0; i < no_of_nodes; i++)
 		Adj[i] = NULL;
 	createGraph(Adj, no_of_nodes);
@@ -38,12 +38,11 @@ void createGraph(struct node* adj[], int no_of_nodes)
 	for (i = 0; i < no_of_nodes; ++i)
 	{
 		last = NULL;
-		printf("\nEnter the number of neighbours of %d: ", i);
-		scanf_s("%d", &n);
+		prin("%d", &n);
 		for (j = 1; j <= n; j++)
 		{
 			printf("\nEnter the neighbour of %d of %d :", j, i);
-			scanf_s("%d", &val);
+			scanf("%d", &val);
 			newNode = (struct node*)malloc(sizeof(struct node*));
 				newNode ->vertex = val;
 			newNode->next = NULL;
